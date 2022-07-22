@@ -5767,8 +5767,18 @@
         const menuBurger = document.querySelector(".icon-menu");
         const menuBody = document.querySelector(".menu-burger");
         if (menuBurger) menuBurger.addEventListener("click", (function(e) {
-            menuBurger.classList.toggle("_burger-active-");
+            menuBurger.classList.toggle("_burger-active");
             if (menuBody) menuBody.classList.toggle("_active-menu-burger");
+        }));
+        const mobileBodyButton = document.querySelector(".button-product-mobile");
+        const mobileBodyBlock = document.querySelector(".catalog-mobile-opacity");
+        const mobileFilterFix = document.querySelector(".filter-fixed-mobile");
+        const mobileProducts = document.querySelector(".catalog-brands");
+        if (mobileBodyButton) mobileBodyButton.addEventListener("click", (function(e) {
+            mobileBodyButton.classList.toggle("_button-product-mobile-active");
+            if (mobileBodyBlock) mobileBodyBlock.classList.toggle("_catalog-mobile-active");
+            if (mobileFilterFix) mobileFilterFix.classList.toggle("_filter-fixed-mobile-active");
+            if (mobileProducts) mobileProducts.classList.toggle("_products-none-active");
         }));
         const rangeInput = document.querySelectorAll(".range-input input"), priceInput = document.querySelectorAll(".price-input input"), range = document.querySelector(".slider .progress");
         let priceGap = 150;
