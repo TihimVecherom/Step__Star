@@ -4027,11 +4027,11 @@ a:hover {
 
 .prev-button-card-product {
   position: absolute;
-  z-index: 10;
-  bottom: -50px;
-  right: 50px;
-  min-width: 30px;
-  min-height: 30px;
+  z-index: 10 !important;
+  bottom: -50px !important;
+  right: 50px !important;
+  min-width: 30px !important;
+  min-height: 30px !important;
   border: 1px solid #000000;
   background: url("../img/main/card-product/arrow-L.svg") center center no-repeat;
   cursor: pointer;
@@ -4039,11 +4039,11 @@ a:hover {
 
 .next-button-card-product {
   z-index: 10;
-  right: 0;
+  right: 0 !important;
   position: absolute;
-  z-index: 10;
-  min-width: 30px;
-  min-height: 30px;
+  z-index: 10 !important;
+  min-width: 30px !important;
+  min-height: 30px !important;
   border: 1px solid #000000;
   background: url("../img/main/card-product/arrow-P.svg") center center no-repeat;
   cursor: pointer;
@@ -4051,22 +4051,21 @@ a:hover {
 
 .prev-button-card-product-1 {
   position: absolute;
-  z-index: 10;
-  bottom: -50px;
-  right: 50px;
-  min-width: 30px;
-  min-height: 30px;
+  z-index: 10 !important;
+  bottom: -50px !important;
+  right: 50px !important;
+  min-width: 30px !important;
+  min-height: 30px !important;
   border: 1px solid #000000;
   background: url("../img/main/card-product/arrow-L.svg") center center no-repeat;
   cursor: pointer;
 }
 
 .next-button-card-product-1 {
-  z-index: 10;
-  right: 0;
+  z-index: 10 !important;
+  right: 0 !important;
   position: absolute;
-  z-index: 10;
-  min-width: 30px;
+  min-width: 30px !important;
   min-height: 30px;
   border: 1px solid #000000;
   background: url("../img/main/card-product/arrow-P.svg") center center no-repeat;
