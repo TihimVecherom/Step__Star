@@ -4028,7 +4028,7 @@ a:hover {
 .prev-button-card-product {
   position: absolute;
   z-index: 10 !important;
-  bottom: -50px !important;
+  bottom: 0px !important;
   right: 50px !important;
   min-width: 30px !important;
   min-height: 30px !important;
@@ -4052,7 +4052,7 @@ a:hover {
 .prev-button-card-product-1 {
   position: absolute;
   z-index: 10 !important;
-  bottom: -50px !important;
+  bottom: 0px !important;
   right: 50px !important;
   min-width: 30px !important;
   min-height: 30px !important;
