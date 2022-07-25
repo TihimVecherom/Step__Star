@@ -5628,6 +5628,58 @@
                     },
                     on: {}
                 });
+                new core(".swiper-like", {
+                    modules: [ Navigation ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 6,
+                    spaceBetween: 0,
+                    autoHeight: false,
+                    speed: 800,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true
+                    },
+                    navigation: {
+                        prevEl: ".swiper-button-prev",
+                        nextEl: ".swiper-button-next"
+                    },
+                    breakpoints: {
+                        280: {
+                            slidesPerView: 1,
+                            spaceBetween: 0
+                        },
+                        320: {
+                            slidesPerView: 2,
+                            spaceBetween: 10
+                        },
+                        550: {
+                            slidesPerView: 3,
+                            spaceBetween: 20
+                        },
+                        768: {
+                            slidesPerView: 4,
+                            spaceBetween: 20
+                        },
+                        992: {
+                            slidesPerView: 4,
+                            spaceBetween: 20
+                        },
+                        1268: {
+                            slidesPerView: 5,
+                            spaceBetween: 30
+                        },
+                        1600: {
+                            slidesPerView: 6,
+                            spaceBetween: 30
+                        },
+                        1920: {
+                            slidesPerView: 6,
+                            spaceBetween: 30
+                        }
+                    },
+                    on: {}
+                });
             }
         }
         window.addEventListener("load", (function(e) {
