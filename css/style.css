@@ -2011,6 +2011,9 @@ body.touch .arrow {
 }
 
 .product {
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   overflow: hidden;
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.4);
@@ -2172,6 +2175,11 @@ body.touch .arrow {
   .product__old-price {
     font-size: calc(0.625rem + 0.125 * (100vw - 22.5rem) / 97.5);
   }
+}
+
+.product:hover {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.699);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.699);
 }
 
 .sale-none {
@@ -3080,6 +3088,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 60px;
 }
 
 .card-product__additional-photos {
@@ -3983,10 +3992,6 @@ a:hover {
   }
 }
 
-.swiper-like-slide {
-  min-height: 100%;
-}
-
 .product__add-basket {
   font-style: normal;
   font-weight: 600;
@@ -4011,6 +4016,65 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   min-height: 34px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.not-arrow ._spoller-active {
+  background: none;
+}
+
+.prev-button-card-product {
+  position: absolute;
+  z-index: 10;
+  bottom: -50px;
+  right: 50px;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #000000;
+  background: url("../img/main/card-product/arrow-L.svg") center center no-repeat;
+  cursor: pointer;
+}
+
+.next-button-card-product {
+  z-index: 10;
+  right: 0;
+  position: absolute;
+  z-index: 10;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #000000;
+  background: url("../img/main/card-product/arrow-P.svg") center center no-repeat;
+  cursor: pointer;
+}
+
+.prev-button-card-product-1 {
+  position: absolute;
+  z-index: 10;
+  bottom: -50px;
+  right: 50px;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #000000;
+  background: url("../img/main/card-product/arrow-L.svg") center center no-repeat;
+  cursor: pointer;
+}
+
+.next-button-card-product-1 {
+  z-index: 10;
+  right: 0;
+  position: absolute;
+  z-index: 10;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #000000;
+  background: url("../img/main/card-product/arrow-P.svg") center center no-repeat;
+  cursor: pointer;
+}
+
+.swiper-like-slide {
+  min-height: 100%;
 }
 
 .icon-menu {
@@ -6348,7 +6412,8 @@ button.swiper-pagination-bullet {
     bottom: 50px;
   }
 
-  .card-product__mobile-button-swiper {
+  .card-product__mobile-button-swiper,
+  .card-product__mobile-button-swiper-2 {
     margin-top: 20px;
     margin-left: auto;
     width: 80px;
