@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Карточка товара</title>
+	<title>Корзина</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -2901,1021 +2901,287 @@
 									</nav>
 								</div>
 
-								<div class="card-product__body">
+								<div class="card-product__body basket-block">
 
 									<div class="card-product__points-block">
 										<div class="card-product__point">Главная /</div>
-										<div class="card-product__point">Nike /</div>
-										<div class="card-product__point">Nike air force 1 /</div>
-										<div class="card-product__point">Air force 1 /</div>
-										<div class="card-product__point points-active">Кроссовки Nike Air Force 1 Low All White –
-											Кожа</div>
+										<div class="card-product__point points-active">Корзина</div>
 									</div>
+									<div class="basket-block__tabs-points">
+										<div data-tabs class="tabs tabs-basket">
+											<nav data-tabs-titles class="tabs__navigation tabs-navigation-basket">
+												<button type="submit" class="tabs__title tabs-title-basket _tab-active">1.Козина
+													<span>></span></button>
+												<button type="submit" class="tabs__title tabs-title-basket">2. Оформление заказа
+													<span>></span></button>
+												<button type="submit" class="tabs__title tabs-title-basket">3. Заказ завершён
+												</button>
+											</nav>
+											<div data-tabs-body class="tabs__content tabs-content-basket">
+												<div class="tabs__body tabs-body-basket">
+													<div class="tabs-body-basket__title-columns  ">
+														<div class="basket-products__columns-title  ">
+															Товар
+														</div>
+														<div class="basket-products__columns-title  ">
+															Цена
+														</div>
+														<div class="basket-products__columns-title ">
+															Количество
+														</div>
+														<div class="basket-products__columns-title  ">
+															Подытог
+														</div>
+													</div>
+													<div class="basket-products">
+														<div class="basket-products__product ">
 
-									<div class="card-product__info-product">
-										<div class="card-product__pictures-box">
-											<div class="card-product__additional-photos">
-												<div class="card-product__additional-photo-ibg">
-													<img src="img/main/card-product/additional-photos/1.jpg" alt="additional-photos">
+															<div class="basket-products__content-columns ">
+																<div class="basket-products__content-columns-block">
+																	<div class="basket-products__columns-title non-pc border-bottom">
+																		Товар
+																	</div>
+																	<div class="basket-products__item-picture-block">
+																		<div class="basket-products__item-columns-picture-ibg_contain">
+																			<img src="img/main/basket/basket-product/1.jpg" alt="Product">
+																		</div>
+																		<div class="basket-products__item item-columns-description ">
+																			Кроссовки Nike Air <br>
+																			Force 1 Low <br>
+																			All White – Кожа – <br>
+																			EUR 38 <br>
+																		</div>
+																	</div>
+																</div>
+																<div class="basket-products__content-columns-block flex-block-space-between-mobile">
+																	<div class="basket-products__columns-title non-pc ">
+																		Цена</div>
+																	<div class="basket-products__item item-columns-price">5990,00
+																		Руб.</div>
+																</div>
+																<div class="basket-products__content-columns-block flex-block-space-between-mobile">
+																	<div class="basket-products__columns-title non-pc  ">
+																		Количество
+																	</div>
+																	<div class="basket-products__item item-columns-quantity">
 
-												</div>
-												<div class="card-product__additional-photo-ibg">
-													<img src="img/main/card-product/additional-photos/2.jpg" alt="additional-photos">
+																		<div class="number block-quantity block-quantity-basket-mobile">
+																			<button class="quantity-minus quantity-minus-basket-mobile" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
 
-												</div>
-												<div class="card-product__additional-photo-ibg">
-													<img src="img/main/card-product/additional-photos/3.jpg" alt="additional-photos">
+																			<input class="quantity-input quantity-input-basket-mobile" type="number" min="0" value="0" readonly>
 
-												</div>
-												<div class="card-product__additional-photo-ibg">
-													<img src="img/main/card-product/additional-photos/4.jpg" alt="additional-photos">
 
-												</div>
-												<div class="card-product__additional-photo-ibg">
-													<img src="img/main/card-product/additional-photos/5.jpg" alt="additional-photos">
+																			<button class="quantity-plus quantity-plus-basket-mobile" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
 
-												</div>
-											</div>
-											<div class="card-product__swiper ">
-												<div class="swiper swiper-card-product">
-													<!-- Additional required wrapper -->
-													<div class="swiper-wrapper ">
-														<!-- Slides -->
-														<div class="swiper-slide slide-card-product">
-															<div class="swiper-product-photo-ibg"><img src="img/main/card-product/photo/1.jpg" alt="photo-product">
+																		</div>
+
+																	</div>
+																</div>
+																<div class="basket-products__content-columns-block flex-block-space-between-mobile">
+																	<div class="basket-products__columns-title non-pc ">
+																		Подытог</div>
+																	<div class="basket-products__item item-columns-sum">
+																		5990,00 Руб.
+																	</div>
+																</div>
+																<button class="basket-products__delet"></button>
 															</div>
 
 														</div>
-														<div class="swiper-slide ">
-															<div class="swiper-product-photo-ibg"><img src="img/main/card-product/photo/1.jpg" alt="photo-product">
+
+													</div>
+													<div class="basket-products">
+														<div class="basket-products__product ">
+
+															<div class="basket-products__content-columns border-bottom">
+																<div class="basket-products__content-columns-block">
+																	<div class="basket-products__columns-title non-pc ">
+																		Товар
+																	</div>
+																	<div class="basket-products__item-picture-block">
+																		<div class="basket-products__item-columns-picture-ibg_contain">
+																			<img src="img/main/basket/basket-product/2.jpg" alt="Product">
+																		</div>
+																		<div class="basket-products__item item-columns-description ">
+																			Кроссовки New <br>
+																			Balance 530<br>
+																			WhiteBlack - <br>
+																			Черные| Белые -<br>
+																			EUR 41<br>
+
+																		</div>
+																	</div>
+																</div>
+																<div class="basket-products__content-columns-block flex-block-space-between-mobile">
+																	<div class="basket-products__columns-title non-pc ">
+																		Цена</div>
+																	<div class="basket-products__item  item-columns-price">6990,00
+																		Руб.</div>
+																</div>
+																<div class="basket-products__content-columns-block flex-block-space-between-mobile">
+																	<div class="basket-products__columns-title non-pc ">
+																		Количество
+																	</div>
+																	<div class="basket-products__item item-columns-quantity">
+
+																		<div class="number block-quantity block-quantity-basket-mobile">
+																			<button class="quantity-minus quantity-minus-basket-mobile" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+
+																			<input class="quantity-input quantity-input-basket-mobile" type="number" min="0" value="0" readonly>
+
+
+																			<button class="quantity-plus quantity-plus-basket-mobile" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+
+																		</div>
+
+																	</div>
+																</div>
+																<div class="basket-products__content-columns-block flex-block-space-between-mobile">
+																	<div class="basket-products__columns-title non-pc ">
+																		Подытог</div>
+																	<div class="basket-products__item item-columns-sum">
+																		6990,00 Руб.
+																	</div>
+																</div>
+																<button class="basket-products__delet"></button>
 															</div>
+
 														</div>
-														<div class="swiper-slide ">
-															<div class="swiper-product-photo-ibg"><img src="img/main/card-product/photo/1.jpg" alt="photo-product">
+
+													</div>
+													<div class="tabs-body-basket__block-button">
+														<a class="button-continue-shopping" href="#">Продолжить покупки</a>
+													</div>
+													<div class="tabs-body-basket__block-discount-coupon discount-coupon-basket">
+														<div class="discount-coupon-basket__title">Скидка по купону</div>
+														<div class="discount-coupon-basket__input"><input type="text" name="form[]" placeholder="Введите код купона" class="input-coupon">
+														</div>
+														<a class="discount-coupon-button" href="#">Применить купон</a>
+													</div>
+												</div>
+												<div class="tabs__body tabs-body-basket">
+													<div class="ordering">
+														<div class="ordering__input-heed">
+															<label class="label-placeholder-heed">
+																<input required class="input-placeholder input-heed" type="text">
+																<span placeholder='Ecть купон? Нажмите,чтобы ввести код'></span>
+
+															</label>
+														</div>
+														<div class="ordering__content">
+															<div class="details-of-payment">
+																<div class="details-of-payment__title">Детали оплаты</div>
+																<div class="details-of-payment__content">
+																	<label class="label-placeholder ">
+																		<input required class="input-placeholder" type="name">
+																		<span placeholder='Имя'></span>
+																	</label>
+																	<label class="label-placeholder ">
+																		<input required class="input-placeholder" type="phone">
+																		<span placeholder='Телефон'></span>
+																	</label>
+																	<label class="label-placeholder label-width ">
+																		<input required class="input-placeholder " type="e-mail">
+																		<span placeholder='E-mail'></span>
+																	</label>
+																	<label class="label-placeholder ">
+																		<input required class="input-placeholder" type="city">
+																		<span placeholder='Город'></span>
+																	</label>
+																	<label class="label-placeholder ">
+																		<input required class="input-placeholder" type="street">
+																		<span placeholder='Улица'></span>
+																	</label>
+																	<label class="label-placeholder ">
+																		<input required class="input-placeholder" type="house">
+																		<span placeholder='Дом'></span>
+																	</label>
+																	<label class="label-placeholder ">
+																		<input required class="input-placeholder" type="apartment">
+																		<span placeholder='Квартира'></span>
+																	</label>
+																</div>
+																<div class="details-of-payment__check">
+																	<div class="details-of-payment-block">
+																		<input id='checks-2' type='checkbox' />
+																		<label for='checks-2'>
+																			<span></span>
+																			Зарегистрировать вас ?
+																		</label>
+																	</div>
+																	<div class="details-of-payment-block">
+																		<input id='checks-1' type='checkbox' />
+																		<label for='checks-1'>
+																			<span></span>
+																			Доставка по другому адресу?
+																		</label>
+																	</div>
+																</div>
+															</div>
+															<div class="your-order">
+																<div class="your-order__title">Ваш заказ</div>
+																<div class="your-order__content">
+																	<div class="your-order__product-title">Товар</div>
+																	<div class="your-order__block-price">
+																		<div class="your-order__text">Кроссовки Nike Air Force 1 Low
+																			All White - Кожа - EUR 38 × 1</div>
+																		<div class="your-order__price">5990,00 Руб.</div>
+																	</div>
+																	<div class="your-order__block-price border-bottom">
+																		<div class="your-order__text">Кроссовки New Balance 530 WhiteBlack
+																			-
+																			Черные| Белые - EUR 41 × 1</div>
+																		<div class="your-order__price">6990,00 Руб.</div>
+																	</div>
+																	<div class="your-order__block-sum">
+																		<div class="your-order__sum-text">Подытог</div>
+																		<div class="your-order__sum">12980,00 Руб.</div>
+																	</div>
+																	<div class="your-order__delivery-calculation">
+																		<div class="your-order__delivery-calculation-text">Рассчитать
+																			Доставку</div>
+																		<div class="your-order__delivery-calculation-type">Бесплатная
+																			доставка</div>
+																	</div>
+																	<div class="your-order__total">
+																		<div class="your-order__total-text">Итого</div>
+																		<div class="your-order__total-price">12980,00 Руб.</div>
+																	</div>
+																	<div class="your-order__payment-method">
+																		<div class="your-order__payment-method-title">Способы Оплаты</div>
+																		<div class="your-order-block">
+																			<input id='checks-3' type='checkbox' />
+																			<label for='checks-3'>
+																				<span></span>
+																				Оплата при доставке
+																			</label>
+																		</div>
+																		<div class="your-order-block">
+																			<input id='checks-4' type='checkbox' />
+																			<label for='checks-4'>
+																				<span></span>
+																				Оплата наличными при доставке заказа.
+																			</label>
+																		</div>
+
+																	</div>
+																	<a class="your-order__button" href="#">Подтвердить заказ</a>
+																</div>
 															</div>
 														</div>
 													</div>
-
-
-
-													<!-- If we need navigation buttons -->
-
-
 												</div>
-												<div class="swiper-pagination pagination-mobile pagination-rotate-mobile"></div>
-												<div class="button-block-navigation">
-													<div class="prev-button-main-card-product"></div>
-													<div class="next-button-main-card-product"></div>
+												<div class="tabs__body">
+													3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio
+													exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a
+													minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
 												</div>
 											</div>
 										</div>
-										<div class="card-product__choiсe-feature feature-choice-product">
-											<div class="feature-choice-product__title">Кроссовки Nike Air Force 1 Low
-												All White – Кожа</div>
-											<div class="feature-choice-product__article">Артикул: 1126</div>
-											<div class="feature-choice-product__categories">Категории: Air force 1, Nike, Nike air
-												force 1, Женские, Мужские</div>
-											<div class="feature-choice-product__block-price">
-												<div class="feature-choice-product__price">5990,00 РУБ.</div>
-												<div class="feature-choice-product__old-price">5990,00 РУБ.</div>
-											</div>
-											<div class="card-product__block-rating">
-												<div class="card-product__rating">
-													<div class="rating">
-														<div class="rating__items">
-															<input id="rating-42" type="radio" class="rating__input" value="5" name="rating">
-															<label for="rating-42" class="rating__label"></label>
-															<input id="rating-43" type="radio" class="rating__input" value="4" name="rating">
-															<label for="rating-43" class="rating__label"></label>
-															<input id="rating-44" type="radio" class="rating__input" value="3" name="rating">
-															<label for="rating-44" class="rating__label"></label>
-															<input id="rating-45" type="radio" class="rating__input" value="2" name="rating">
-															<label for="rating-45" class="rating__label"></label>
-															<input id="rating-46" type="radio" class="rating__input" value="1" name="rating">
-															<label for="rating-46" class="rating__label"></label>
-														</div>
-													</div>
-												</div>
-												<div class="card-product__reviews">(1 Отзывы)</div>
-											</div>
-											<div class="card-product__block-choice-size">
-												<div class="card-product__choise-size-title">Размеры</div>
-												<div class="card-product__block-choise-input">
-
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block">
-															<input id='EUR-36' type='radio' name="size" />
-															<label class="label-card-product" for='EUR-36'>
-																<span class="span-card-product">EUR 36</span>
-															</label>
-														</div>
-													</div>
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block">
-															<input id='EUR-37' type='radio' name="size" />
-															<label for='EUR-37'>
-																<span>EUR 37</span>
-															</label>
-														</div>
-													</div>
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block">
-															<input id='EUR-38' type='radio' name="size" />
-															<label for='EUR-38'>
-																<span>EUR 38</span>
-															</label>
-														</div>
-													</div>
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block">
-															<input id='EUR-39' type='radio' name="size" />
-															<label for='EUR-39'>
-																<span>EUR 39</span>
-															</label>
-														</div>
-													</div>
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block">
-															<input id='EUR-40' type='radio' name="size" />
-															<label for='EUR-40'>
-																<span>EUR 40</span>
-															</label>
-														</div>
-													</div>
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block">
-															<input id='EUR-41' type='radio' name="size" />
-															<label for='EUR-41'>
-																<span>EUR 41</span>
-															</label>
-														</div>
-													</div>
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block">
-															<input id='EUR-42' type='radio' name="size" />
-															<label for='EUR-42'>
-																<span>EUR 42</span>
-															</label>
-														</div>
-													</div>
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block">
-															<input id='EUR-43' type='radio' name="size" />
-															<label for='EUR-43'>
-																<span>EUR 43</span>
-															</label>
-														</div>
-													</div>
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block">
-															<input id='EUR-44' type='radio' name="size" />
-															<label for='EUR-44'>
-																<span>EUR 44</span>
-															</label>
-														</div>
-													</div>
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block">
-															<input id='EUR-45' type='radio' name="size" />
-															<label for='EUR-45'>
-																<span>EUR 45</span>
-															</label>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="card-product__block-add-basket">
-												<div class="card-product__quantity non-mobile">
-													<div class="number block-quantity">
-														<button class="quantity-minus " type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
-
-														<input class="quantity-input" type="number" min="0" value="0" readonly>
-
-
-														<button class="quantity-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
-
-													</div>
-												</div>
-												<div class="card-product__button">
-													<a href="basket.html" class="button-add-basket">Добавить в корзину</a>
-												</div>
-												<div data-da=".card-product__swiper,768.98" class="card-product__favorites ">
-													<div class="input-label-card-product">
-														<div class="card-product-checkbox-block-favorites">
-															<input id='favorites-1' type='checkbox' />
-															<label for='favorites-1'>
-																<span></span>
-															</label>
-														</div>
-													</div>
-												</div>
-											</div>
-
-										</div>
-									</div>
-									<div class="card-product__description">
-										<div data-spollers class="spollers spollers-card-product-description">
-											<div class="spollers__item border-top border-bottom">
-												<button type="button" data-spoller class="spollers__title spollers-title-description-card-product _spoller-active">Описание</button>
-												<div class="spollers__body spollers-card-product-description-body ">
-													<div class="feature-choice-product__article">Артикул: 1126</div>
-													<div class="feature-choice-product__categories">Купить Кроссовки Nike Air Force 1
-														Low All White в Москве бренда Nike всего за 4990.</div>
-													<div class="spollers__description-card-product">
-														<div class="description">
-															<div class="description__item">Пол:</div>
-															<div class="description__item">Женские,</div>
-															<div class="description__item">Мужские,</div>
-														</div>
-														<div class="description">
-															<div class="description__item">Цвет:</div>
-															<div class="description__item">Белые</div>
-														</div>
-														<div class="description">
-															<div class="description__item">Материал:</div>
-															<div class="description__item">Кожа</div>
-														</div>
-														<div class="description">
-															<div class="description__item">Высота:</div>
-															<div class="description__item">Низкие</div>
-														</div>
-														<div class="description">
-															<div class="description__item">Сезон:</div>
-															<div class="description__item">Лето</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div data-spollers class="spollers spollers-card-product-description">
-											<div class="spollers__item border-bottom">
-												<button type="button" data-spoller class="spollers__title spollers-title-description-card-product _spoller-active">Как
-													выбрать
-													размер?</button>
-												<div class="spollers__body spollers-card-product-description-body">
-
-													<div class="spollers__description-card-product">
-														<div class="description grid-all-fr">
-															<div class="description__item ">1.Самый удобный способ – замерьте длину
-																стельки от обуви и выберите
-																в таблице своей размер.</div>
-
-														</div>
-														<div class="description grid-all-fr">
-															<div class="description__item">2.Второй способ – возьмите лист, поставьте
-																на него стопу, обведите контур
-																стопы, измерьте расстояние от кончика большого пальца до пятки,
-																выберите размер в таблице.</div>
-
-														</div>
-														<div class="info-size-chart">
-															<div class="size-chart">
-																<div class="size-chart__title">Мужские размеры</div>
-																<div class="size-chart__box-colums">
-																	<div class="size-chart__block">
-																		<div class="size-chart__item">USA</div>
-																		<div class="size-chart__item">7</div>
-																		<div class="size-chart__item">8</div>
-																		<div class="size-chart__item">8.5</div>
-																		<div class="size-chart__item">9.5</div>
-																		<div class="size-chart__item">10</div>
-																		<div class="size-chart__item">11</div>
-																		<div class="size-chart__item">12</div>
-																	</div>
-																	<div class="size-chart__block">
-																		<div class="size-chart__item">Европа,EUR</div>
-																		<div class="size-chart__item">40</div>
-																		<div class="size-chart__item">41</div>
-																		<div class="size-chart__item">42</div>
-																		<div class="size-chart__item">43</div>
-																		<div class="size-chart__item">44</div>
-																		<div class="size-chart__item">45</div>
-																		<div class="size-chart__item">46</div>
-																	</div>
-																	<div class="size-chart__block">
-																		<div class="size-chart__item">Сантиметры</div>
-																		<div class="size-chart__item">25</div>
-																		<div class="size-chart__item">26</div>
-																		<div class="size-chart__item">26.5</div>
-																		<div class="size-chart__item">27.5</div>
-																		<div class="size-chart__item">28</div>
-																		<div class="size-chart__item">29</div>
-																		<div class="size-chart__item">30</div>
-																	</div>
-																</div>
-
-															</div>
-															<div class="size-chart">
-																<div class="size-chart__title">Женские размеры</div>
-																<div class="size-chart__box-colums">
-																	<div class="size-chart__block">
-																		<div class="size-chart__item">USA</div>
-																		<div class="size-chart__item">5.5</div>
-																		<div class="size-chart__item">6.5</div>
-																		<div class="size-chart__item">7</div>
-																		<div class="size-chart__item">8</div>
-																		<div class="size-chart__item">8.5</div>
-
-																	</div>
-																	<div class="size-chart__block">
-																		<div class="size-chart__item">Европа,EUR</div>
-																		<div class="size-chart__item">36</div>
-																		<div class="size-chart__item">37</div>
-																		<div class="size-chart__item">38</div>
-																		<div class="size-chart__item">39</div>
-																		<div class="size-chart__item">40</div>
-
-																	</div>
-																	<div class="size-chart__block">
-																		<div class="size-chart__item">Сантиметры</div>
-																		<div class="size-chart__item">22.5</div>
-																		<div class="size-chart__item">23.5</div>
-																		<div class="size-chart__item">24</div>
-																		<div class="size-chart__item">25</div>
-																		<div class="size-chart__item">25.5</div>
-																	</div>
-																</div>
-
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div data-spollers class="spollers spollers-card-product-description">
-											<div class="spollers__item border-bottom">
-												<button type="button" data-spoller class="spollers__title spollers-title-description-card-product _spoller-active">Отзывы
-													(2)</button>
-												<div class="spollers__body spollers-card-product-description-body">
-
-													<div class="spollers__reviews-card-product">
-														<div class="grade">
-															<div class="grade__number">5,5</div>
-															<div class="grade__text-star">
-																<div class="grade__text">Средний рейтинг</div>
-																<div class="grade__star-block">
-																	<div class="grade__star"></div>
-																	<div class="grade__star"></div>
-																	<div class="grade__star"></div>
-																	<div class="grade__star"></div>
-																	<div class="grade__star"></div>
-																</div>
-															</div>
-														</div>
-														<div class="percentage-scale">
-															<div class="percentage-scale__block">
-																<div class="percentage-scale__star">
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																</div>
-																<div class="percentage-scale__scale-percentage">
-																	<div class="percentage-scale__scale">
-
-																	</div>
-																	<div class="percentage-scale__percentage">
-																		100%
-																	</div>
-																</div>
-															</div>
-															<div class="percentage-scale__block">
-																<div class="percentage-scale__star">
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="border-star"></div>
-																</div>
-																<div class="percentage-scale__scale-percentage">
-																	<div class="percentage-scale__scale scale-opacity">
-
-																	</div>
-																	<div class="percentage-scale__percentage">
-																		100%
-																	</div>
-																</div>
-															</div>
-															<div class="percentage-scale__block">
-																<div class="percentage-scale__star">
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
-																</div>
-																<div class="percentage-scale__scale-percentage">
-																	<div class="percentage-scale__scale scale-opacity">
-
-																	</div>
-																	<div class="percentage-scale__percentage">
-																		100%
-																	</div>
-																</div>
-															</div>
-															<div class="percentage-scale__block">
-																<div class="percentage-scale__star">
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
-																</div>
-																<div class="percentage-scale__scale-percentage">
-																	<div class="percentage-scale__scale scale-opacity">
-
-																	</div>
-																	<div class="percentage-scale__percentage">
-																		100%
-																	</div>
-																</div>
-															</div>
-															<div class="percentage-scale__block">
-																<div class="percentage-scale__star">
-																	<div class="yellow-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
-																</div>
-																<div class="percentage-scale__scale-percentage">
-																	<div class="percentage-scale__scale scale-opacity">
-
-																	</div>
-																	<div class="percentage-scale__percentage">
-																		100%
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="reviews-button button-border">Оставить отзыв</div>
-													<div class="spollers__reviews-message message-reviews">
-														<div class="message-reviews__block">
-															<div class="message-reviews__title-block border-bottom">
-																<div class="message-reviews__title">Екатерина </div>
-																<div class="message-reviews__data">28.04.2022</div>
-															</div>
-															<div class="message-reviews__block-star">
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-															</div>
-															<div class="message-reviews__text">Я ношу эти кроссовки уже больше 3х
-																месяцев, только сейчас решила написать
-																отзыв. Качество хорошее, ходила в них и в дождь и в снег, очень удобные,
-																у нас
-																с мамой один размер, так она тоже их носит, думаю заказать ещё такие
-																для неё))))
-															</div>
-															<div class="message-reviews__like">
-																<div class=" like"> </div>
-																<div class="like-text">5</div>
-																<div class="dislike"></div>
-																<div class="like-text">0</div>
-															</div>
-														</div>
-														<div class="message-reviews__block">
-															<div class="message-reviews__title-block border-bottom">
-																<div class="message-reviews__title">Дмитрий</div>
-																<div class="message-reviews__data">09.01.2022</div>
-															</div>
-															<div class="message-reviews__block-star">
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-															</div>
-															<div class="message-reviews__text">Кроссовки очень удобные и красивые. Ношу
-																не снимая. соотношение цены
-																и качества приятно порадовало.
-															</div>
-															<div class="message-reviews__like">
-																<div class=" like"> </div>
-																<div class="like-text">0</div>
-																<div class="dislike"></div>
-																<div class="like-text">0</div>
-															</div>
-														</div>
-													</div>
-												</div>
-
-
-											</div>
-										</div>
-									</div>
-									<div class="card-product__slider-like  border-top">
-										<div class="swiper-like-1">
-
-											<div class="swiper-like-title-block">
-												<div class="swiper-like-title">Мы думаем , вам понравится
-												</div>
-												<div data-da=".card-product__mobile-button-swiper,768.98" class=" prev-button-card-product-1 button-slide-like-prev"></div>
-												<div data-da=".card-product__mobile-button-swiper,768.98" class=" next-button-card-product-1 button-slide-like-next">
-												</div>
-											</div>
-											<!-- Additional required wrapper -->
-											<div class="swiper-wrapper swiper-like-wrapper">
-
-
-												<!-- Slides -->
-												<div class="swiper-slide swiper-like-slide">
-
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale">-35%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/23.jpg" alt="product">
-														</div>
-														<div class="product__name">ADIDAS, ADIDAS INIKI RUNNER, БЕГОВЫЕ...</div>
-														<div class="product__title">Кроссовки Adidas Inik...</div>
-														<div class="product__price-block block-price-product">
-															<div class="product__price-wrapper">
-																<div class="product__price">5290,00 РУБ.</div>
-																<div class="product__old-price">8090,00 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-
-
-
-												</div>
-												<div class="swiper-slide swiper-like-slide">
-
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale">-21%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/24.jpg" alt="product">
-														</div>
-														<div class="product__name">AIR FORCE 1, NIKE, NIKE AIR FORCE 1, БЕГ... </div>
-														<div class="product__title">Кроссовки Nike Air Fo...</div>
-														<div class="product__price-block block-price-product ">
-															<div class="product__price-wrapper">
-																<div class="product__price">7000,00 РУБ.</div>
-																<div class="product__old-price"> 8890,00 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-
-
-
-												</div>
-												<div class="swiper-slide swiper-like-slide">
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale sale-none">-21%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/25.jpg" alt="product">
-														</div>
-														<div class="product__name">МУЖСКИЕ, NIKE, NIKE VENTURE RUNNER...</div>
-														<div class="product__title">Кроссовки Nike Vent...</div>
-														<div class="product__price-block block-price-product">
-															<div class="product__price-wrapper">
-																<div class="product__price">6590,00 РУБ.</div>
-																<div class="product__old-price old-price-none"> 9890,0 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-												</div>
-												<div class="swiper-slide swiper-like-slide">
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale sale-none">-21%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/26.jpg" alt="product">
-														</div>
-														<div class="product__name">AIR JORDAN 1 RETRO, JORDAN, ЖЕНСКИЕ</div>
-														<div class="product__title">Кроссовки Nike Air Jo...</div>
-														<div class="product__price-block block-price-product ">
-															<div class="product__price-wrapper">
-																<div class="product__price">6790,00 РУБ.</div>
-																<div class="product__old-price old-price-none "> 9890,0 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-												</div>
-												<div class="swiper-slide swiper-like-slide">
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale sale-none ">-21%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/27.jpg" alt="product">
-														</div>
-														<div class="product__name">NIKE, NIKE SHOX, БЕГОВЫЕ, ДЛЯ СПОР...</div>
-														<div class="product__title">Кроссовки Nike X Sk...</div>
-														<div class="product__price-block block-price-product ">
-															<div class="product__price-wrapper">
-																<div class="product__price">6990,00 РУБ.</div>
-																<div class="product__old-price old-price-none"> 9890,0 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-												</div>
-												<div class="swiper-slide swiper-like-slide">
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale">-28%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/28.jpg" alt="product">
-														</div>
-														<div class="product__name">ADIDAS, ADIDAS OZWEEGO, ЖЕНСКИЕ...</div>
-														<div class="product__title">Кроссовки Adidas Oz...</div>
-														<div class="product__price-block block-price-product">
-															<div class="product__price-wrapper">
-																<div class="product__price">5990,00 РУБ.</div>
-																<div class="product__old-price"> 8290,00 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-												</div>
-
-
-											</div>
-											<!-- If we need pagination -->
-
-
-											<!-- If we need navigation buttons -->
-
-											<div class="card-product__mobile-button-swiper"></div>
-											<!-- If we need scrollbar -->
-
-										</div>
-
-
-									</div>
-									<div class="card-product__slider-like border-top">
-										<div class="swiper-like">
-
-											<div class="swiper-like-title-block">
-												<div class="swiper-like-title">Просмотренные товары</div>
-												<div data-da=".card-product__mobile-button-swiper-2,768.98" class="prev-button-card-product button-slide-like-prev"></div>
-												<div data-da=".card-product__mobile-button-swiper-2,768.98" class="next-button-card-product button-slide-like-next">
-												</div>
-											</div>
-											<!-- Additional required wrapper -->
-											<div class="swiper-wrapper swiper-like-wrapper">
-
-
-												<!-- Slides -->
-												<div class="swiper-slide swiper-like-slide">
-
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale">-35%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/23.jpg" alt="product">
-														</div>
-														<div class="product__name">ADIDAS, ADIDAS INIKI RUNNER, БЕГОВЫЕ...</div>
-														<div class="product__title">Кроссовки Adidas Inik...</div>
-														<div class="product__price-block block-price-product ">
-															<div class="product__price-wrapper">
-																<div class="product__price">5290,00 РУБ.</div>
-																<div class="product__old-price">8090,00 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-
-
-
-												</div>
-												<div class="swiper-slide swiper-like-slide">
-
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale">-21%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/24.jpg" alt="product">
-														</div>
-														<div class="product__name">AIR FORCE 1, NIKE, NIKE AIR FORCE 1, БЕГ... </div>
-														<div class="product__title">Кроссовки Nike Air Fo...</div>
-														<div class="product__price-block block-price-product ">
-															<div class="product__price-wrapper">
-																<div class="product__price">7000,00 РУБ.</div>
-																<div class="product__old-price"> 8890,00 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-
-
-
-												</div>
-												<div class="swiper-slide swiper-like-slide">
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale sale-none">-21%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/25.jpg" alt="product">
-														</div>
-														<div class="product__name">МУЖСКИЕ, NIKE, NIKE VENTURE RUNNER...</div>
-														<div class="product__title">Кроссовки Nike Vent...</div>
-														<div class="product__price-block block-price-product ">
-															<div class="product__price-wrapper">
-																<div class="product__price">6590,00 РУБ.</div>
-																<div class="product__old-price old-price-none"> 9890,0 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-												</div>
-												<div class="swiper-slide swiper-like-slide">
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale sale-none">-21%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/26.jpg" alt="product">
-														</div>
-														<div class="product__name">AIR JORDAN 1 RETRO, JORDAN, ЖЕНСКИЕ</div>
-														<div class="product__title">Кроссовки Nike Air Jo...</div>
-														<div class="product__price-block block-price-product ">
-															<div class="product__price-wrapper">
-																<div class="product__price">6790,00 РУБ.</div>
-																<div class="product__old-price old-price-none "> 9890,0 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-												</div>
-												<div class="swiper-slide swiper-like-slide">
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale sale-none ">-21%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/27.jpg" alt="product">
-														</div>
-														<div class="product__name">NIKE, NIKE SHOX, БЕГОВЫЕ, ДЛЯ СПОР...</div>
-														<div class="product__title">Кроссовки Nike X Sk...</div>
-														<div class="product__price-block block-price-product ">
-															<div class="product__price-wrapper">
-																<div class="product__price">6990,00 РУБ.</div>
-																<div class="product__old-price old-price-none"> 9890,0 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-												</div>
-												<div class="swiper-slide swiper-like-slide">
-													<a href="#" class="product">
-														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
-																	</div>
-																</div>
-															</div>
-															<div class="product__sale">-28%</div>
-														</div>
-														<div class="product__reviews">(0 отзывов)</div>
-														<div class="product__picture-ibg">
-															<img src="img/main/catalog/catalog__products/28.jpg" alt="product">
-														</div>
-														<div class="product__name">ADIDAS, ADIDAS OZWEEGO, ЖЕНСКИЕ...</div>
-														<div class="product__title">Кроссовки Adidas Oz...</div>
-														<div class="product__price-block block-price-product ">
-															<div class="product__price-wrapper">
-																<div class="product__price">5990,00 РУБ.</div>
-																<div class="product__old-price"> 8290,00 РУБ.</div>
-															</div>
-															<button class="product__add-basket">В корзину +</button>
-														</div>
-													</a>
-												</div>
-
-
-											</div>
-											<!-- If we need pagination -->
-
-
-											<!-- If we need navigation buttons -->
-
-											<div class="card-product__mobile-button-swiper-2"></div>
-											<!-- If we need scrollbar -->
-
-										</div>
-
-
 									</div>
 								</div>
+
+
 
 							</div>
 							<div class="tabs__body ">
