@@ -5628,6 +5628,24 @@
                     },
                     on: {}
                 });
+                new core(".swiper-card-product", {
+                    modules: [ Navigation ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    autoHeight: true,
+                    speed: 800,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true
+                    },
+                    navigation: {
+                        prevEl: ".prev-button-main-card-product",
+                        nextEl: ".next-button-main-card-product"
+                    },
+                    on: {}
+                });
                 new core(".swiper-like", {
                     modules: [ Navigation ],
                     observer: true,

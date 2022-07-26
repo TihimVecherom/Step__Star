@@ -3652,7 +3652,7 @@ a:hover {
 }
 
 .spollers-card-product-description ._spoller-active {
-  background: url("../img/main/card-product/arrow-down.svg") right center no-repeat;
+  background: url("../img/main/card-product/arrow-down.svg") right center no-repeat !important;
 }
 
 .grade {
@@ -4070,6 +4070,35 @@ a:hover {
   border: 1px solid #000000;
   background: url("../img/main/card-product/arrow-P.svg") center center no-repeat;
   cursor: pointer;
+}
+
+.prev-button-main-card-product {
+  z-index: 10;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #000000;
+  background: url("../img/main/card-product/arrow-L.svg") center center no-repeat;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.next-button-main-card-product {
+  z-index: 10;
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid #000000;
+  background: url("../img/main/card-product/arrow-P.svg") center center no-repeat;
+  cursor: pointer;
+}
+
+.button-block-navigation {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .swiper-like-slide {
@@ -5849,6 +5878,10 @@ button.swiper-pagination-bullet {
     opacity: 0;
   }
 
+  .card-product__swiper {
+    margin-bottom: 30px;
+  }
+
   .product__price-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5857,6 +5890,12 @@ button.swiper-pagination-bullet {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .button-block-navigation {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .header-number {
