@@ -5629,7 +5629,7 @@
                     on: {}
                 });
                 new core(".swiper-card-product", {
-                    modules: [ Navigation ],
+                    modules: [ Navigation, Pagination ],
                     observer: true,
                     observeParents: true,
                     slidesPerView: 1,
