@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220727155658">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220730224504">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header ">
+			<div id="fix" class="fix-popap"></div>
 			<div class="header__menu menu-burger non-pc">
 				<div class="menu__search non-pc">
 					<input class="input-search" type="text" placeholder="Поиск">
@@ -1193,12 +1194,12 @@
 					</div>
 					<div class="header-info__block-mobile">
 						<a class="header-top__item sales" href="#">Акции</a>
-						<a class="header-top__item shipping-payment" href="#">Доставка и оплата</a>
-						<a class="header-top__item guarantees" href="#">Гарантии</a>
-						<a class="header-top__item how-to-make-order" href="#">Как сделать заказ</a>
+						<a class="header-top__item shipping-payment" href="Payment-and-delivery.html">Доставка и оплата</a>
+						<a class="header-top__item guarantees" href="guarantees.html">Гарантии</a>
+						<a class="header-top__item " href="info-order.html">Как сделать заказ</a>
 					</div>
 
-					<a class="header-top__button" href="#">Войти / Регистрация</a>
+					<a class="header-top__button" href="#popup-enter">Войти / Регистрация</a>
 					<div class="header-info__block-questions">
 						<div class="question-mobile">Хотите заказать
 							кроссовки?</div>
@@ -1448,13 +1449,13 @@
 				<div class="header-top__container">
 
 					<div class="header-top__items">
-						<a class="header-top__item shipping-payment" href="#">Доставка и оплата</a>
-						<a class="header-top__item guarantees" href="#">Гарантии</a>
-						<a class="header-top__item how-to-make-order" href="#">Как сделать заказ</a>
+						<a class="header-top__item shipping-payment" href="Payment-and-delivery.html">Доставка и оплата</a>
+						<a class="header-top__item guarantees-link" href="guarantees.html">Гарантии</a>
+						<a class="header-top__item how-to-make-order-link" href="info-order.html">Как сделать заказ</a>
 					</div>
 					<div class="header-top__items">
-						<a class="header-top__item contacts" href="#">Контакты</a>
-						<a class="header-top__item login-registration" href="#">Войти / Регистрация</a>
+						<a class="header-top__item contacts" href="cabinet.html">Контакты</a>
+						<a class="header-top__item login-registration" href="#popup-enter">Войти/Регистрация</a>
 					</div>
 				</div>
 			</div>
@@ -1486,7 +1487,135 @@
 					</div>
 				</div>
 			</div>
+			<div id="popup-enter" class="popap-main">
+				<div class="wrapper-popap">
+					<div class="backgraund-popap"></div>
+					<a class="popap-area" href="#fix"></a>
+					<div class="popap">
+						<div class="popap__container">
 
+							<div class="popap__title">Вход</div>
+
+							<div class="popap__content">
+
+								<div class="popap-form">
+									<label class="label-placeholder label-placeholder-popap">
+										<input required class="input-placeholder" type="text">
+										<span placeholder='Имя пользователя или адрес электронной почты'></span>
+									</label>
+									<label class="label-placeholder label-placeholder-popap">
+										<input required class="input-placeholder" type="password">
+										<span placeholder='Пароль'></span>
+									</label>
+									<div class="input-label-block-popap">
+										<div class="popap-checkbox-block">
+											<input id='check-popap' type='checkbox' />
+											<label for='check-popap'>
+												<span></span>
+												Запомнить меня
+											</label>
+										</div>
+										<a href="#popup-password-remove" class="count-product-filter popap-link">Забыли пароль?</a>
+									</div>
+								</div>
+							</div>
+							<div class="popap__button-block"><a href="#" class="popap-button">Войти</a></div>
+							<a href="#fix" class="button-popap-delet"></a>
+							<a href="#popup-registration" class="popap-link-registration">Регистрация</a>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div id="popup-registration" class="popap-main">
+				<div class="wrapper-popap">
+					<div class="backgraund-popap"></div>
+					<a class="popap-area" href="#fix"></a>
+					<div class="popap">
+						<div class="popap__container">
+
+							<div class="popap__title">Регистрация</div>
+
+							<div class="popap__content">
+
+								<div class="popap-form">
+									<label class="label-placeholder label-placeholder-popap">
+										<input required class="input-placeholder" type="email">
+										<span placeholder='Ваш адрес электронной почты'></span>
+									</label>
+									<div class="popap-text-form">Пароль будет отправлен на ваш адрес электронной почты.</div>
+									<div class="input-label-block-popap">
+										<div class="popap-checkbox-block">
+											<input id='check-popap-1' type='checkbox' />
+											<label for='check-popap-1'>
+												<span></span>
+												Даю согласие на обработку персональных данных в соответствии
+												с
+											</label>
+										</div>
+										<a href="#" class="count-product-filter popap-link link-underline color-black">Положением
+											конфиденциальности</a>
+									</div>
+								</div>
+							</div>
+							<div class="popap__button-block"><a href="#" class="popap-button ">Регистрация</a></div>
+							<a href="#fix" class="button-popap-delet"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="popup-forgot-password" class="popap-main">
+				<div class="wrapper-popap">
+					<div class="backgraund-popap"></div>
+					<a class="popap-area" href="#fix"></a>
+					<div class="popap">
+						<div class="popap__container">
+
+							<div class="popap__title">Забыли пароль?</div>
+
+							<div class="popap__content">
+								<div class="popap-text-form text-popap-check">Письмо восстановления пароля отправлено.</div>
+								<div class="popap-text-form">Письмо со ссылкой для сброса пароля было направленно на адрес
+									электронной почты, привязанный к вашей учётной записи. Доставка
+									сообщения может занять несколько минут. Пожалуйста, подождите
+									не менее 10 минут, прежде чем инициировать ещё один запрос.</div>
+							</div>
+
+							<a href="#fix" class="button-popap-delet"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="popup-password-remove" class="popap-main">
+				<div class="wrapper-popap">
+					<div class="backgraund-popap"></div>
+					<a class="popap-area" href="#fix"></a>
+					<div class="popap">
+						<div class="popap__container">
+
+							<div class="popap__title">Запрос на сброс пароля</div>
+
+							<div class="popap__content">
+								<div class="popap-text-form ">Здравствуйте,andrey17ful.</div>
+								<div class="popap-text-form ">На Купить кроссовки был запрошен новый пароль для аккаунта </div>
+								<div class="popap-text-form ">Имя пользователя: andrey17ful</div>
+								<div class="popap-text-form ">Если вы не отправляли этот запрос , просто проигнорируйте это сообщение
+								</div>
+								<div class="popap-text-form ">Если хотите продолжить</div>
+								<a href="#popup-forgot-password" class="popap-text-form popap-link link-underline color-black ">Нажмите здесь что бы
+									сбросить свой пароль</a>
+								<div class="popap-text-form non-margin-bottom">Спасибо что ознакомились</div>
+							</div>
+
+							<a href="#fix" class="button-popap-delet"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</header>
 		<main class="page">
 
@@ -2904,12 +3033,13 @@
 								<div class="card-product__body">
 
 									<div class="card-product__points-block">
-										<div class="card-product__point">Главная /</div>
-										<div class="card-product__point">Nike /</div>
-										<div class="card-product__point">Nike air force 1 /</div>
-										<div class="card-product__point">Air force 1 /</div>
-										<div class="card-product__point points-active">Кроссовки Nike Air Force 1 Low All White –
-											Кожа</div>
+										<a href="#" class="card-product__point">Главная /</a>
+										<a href="#" class="card-product__point">Nike /</a>
+										<a href="#" class="card-product__point">Nike air force 1 /</a>
+										<a href="#" class="card-product__point">Air force 1 /</a>
+										<a href="#" class="card-product__point points-active">Кроссовки Nike Air Force 1 Low All
+											White –
+											Кожа</a>
 									</div>
 
 									<div class="card-product__info-product">
@@ -2982,17 +3112,16 @@
 											<div class="card-product__block-rating">
 												<div class="card-product__rating">
 													<div class="rating">
-														<div class="rating__items">
-															<input id="rating-42" type="radio" class="rating__input" value="5" name="rating">
-															<label for="rating-42" class="rating__label"></label>
-															<input id="rating-43" type="radio" class="rating__input" value="4" name="rating">
-															<label for="rating-43" class="rating__label"></label>
-															<input id="rating-44" type="radio" class="rating__input" value="3" name="rating">
-															<label for="rating-44" class="rating__label"></label>
-															<input id="rating-45" type="radio" class="rating__input" value="2" name="rating">
-															<label for="rating-45" class="rating__label"></label>
-															<input id="rating-46" type="radio" class="rating__input" value="1" name="rating">
-															<label for="rating-46" class="rating__label"></label>
+														<div class="rating__body">
+															<div class="rating__active" style="
+																width: 100%;"></div>
+															<div class="rating__items">
+																<input type="radio" class="rating__item" value="1" name="rating">
+																<input type="radio" class="rating__item" value="2" name="rating">
+																<input type="radio" class="rating__item" value="3" name="rating">
+																<input type="radio" class="rating__item" value="4" name="rating">
+																<input type="radio" class="rating__item" value="5" name="rating">
+															</div>
 														</div>
 													</div>
 												</div>
@@ -3265,11 +3394,19 @@
 														<div class="percentage-scale">
 															<div class="percentage-scale__block">
 																<div class="percentage-scale__star">
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
+																	<div class="rating non-margin-bottom">
+																		<div class="rating__body rating-percentage-scale-size-body">
+																			<div class="rating__active rating-percentage-scale-size-active" style="
+																				width: 100%;"></div>
+																			<div class="rating__items">
+																				<input type="radio" class="rating__item" value="1" name="rating">
+																				<input type="radio" class="rating__item" value="2" name="rating">
+																				<input type="radio" class="rating__item" value="3" name="rating">
+																				<input type="radio" class="rating__item" value="4" name="rating">
+																				<input type="radio" class="rating__item" value="5" name="rating">
+																			</div>
+																		</div>
+																	</div>
 																</div>
 																<div class="percentage-scale__scale-percentage">
 																	<div class="percentage-scale__scale">
@@ -3282,11 +3419,19 @@
 															</div>
 															<div class="percentage-scale__block">
 																<div class="percentage-scale__star">
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="border-star"></div>
+																	<div class="rating non-margin-bottom">
+																		<div class="rating__body rating-percentage-scale-size-body">
+																			<div class="rating__active rating-percentage-scale-size-active" style="
+																				width: 80%;"></div>
+																			<div class="rating__items">
+																				<input type="radio" class="rating__item" value="1" name="rating">
+																				<input type="radio" class="rating__item" value="2" name="rating">
+																				<input type="radio" class="rating__item" value="3" name="rating">
+																				<input type="radio" class="rating__item" value="4" name="rating">
+																				<input type="radio" class="rating__item" value="5" name="rating">
+																			</div>
+																		</div>
+																	</div>
 																</div>
 																<div class="percentage-scale__scale-percentage">
 																	<div class="percentage-scale__scale scale-opacity">
@@ -3299,11 +3444,19 @@
 															</div>
 															<div class="percentage-scale__block">
 																<div class="percentage-scale__star">
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
+																	<div class="rating non-margin-bottom">
+																		<div class="rating__body rating-percentage-scale-size-body">
+																			<div class="rating__active rating-percentage-scale-size-active" style="
+																				width: 60%;"></div>
+																			<div class="rating__items">
+																				<input type="radio" class="rating__item" value="1" name="rating">
+																				<input type="radio" class="rating__item" value="2" name="rating">
+																				<input type="radio" class="rating__item" value="3" name="rating">
+																				<input type="radio" class="rating__item" value="4" name="rating">
+																				<input type="radio" class="rating__item" value="5" name="rating">
+																			</div>
+																		</div>
+																	</div>
 																</div>
 																<div class="percentage-scale__scale-percentage">
 																	<div class="percentage-scale__scale scale-opacity">
@@ -3316,11 +3469,19 @@
 															</div>
 															<div class="percentage-scale__block">
 																<div class="percentage-scale__star">
-																	<div class="yellow-star"></div>
-																	<div class="yellow-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
+																	<div class="rating non-margin-bottom">
+																		<div class="rating__body rating-percentage-scale-size-body">
+																			<div class="rating__active rating-percentage-scale-size-active" style="
+																				width: 40%;"></div>
+																			<div class="rating__items">
+																				<input type="radio" class="rating__item" value="1" name="rating">
+																				<input type="radio" class="rating__item" value="2" name="rating">
+																				<input type="radio" class="rating__item" value="3" name="rating">
+																				<input type="radio" class="rating__item" value="4" name="rating">
+																				<input type="radio" class="rating__item" value="5" name="rating">
+																			</div>
+																		</div>
+																	</div>
 																</div>
 																<div class="percentage-scale__scale-percentage">
 																	<div class="percentage-scale__scale scale-opacity">
@@ -3333,11 +3494,19 @@
 															</div>
 															<div class="percentage-scale__block">
 																<div class="percentage-scale__star">
-																	<div class="yellow-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
-																	<div class="border-star"></div>
+																	<div class="rating non-margin-bottom">
+																		<div class="rating__body rating-percentage-scale-size-body">
+																			<div class="rating__active rating-percentage-scale-size-active" style="
+																				width: 20%;"></div>
+																			<div class="rating__items">
+																				<input type="radio" class="rating__item" value="1" name="rating">
+																				<input type="radio" class="rating__item" value="2" name="rating">
+																				<input type="radio" class="rating__item" value="3" name="rating">
+																				<input type="radio" class="rating__item" value="4" name="rating">
+																				<input type="radio" class="rating__item" value="5" name="rating">
+																			</div>
+																		</div>
+																	</div>
 																</div>
 																<div class="percentage-scale__scale-percentage">
 																	<div class="percentage-scale__scale scale-opacity">
@@ -3350,7 +3519,7 @@
 															</div>
 														</div>
 													</div>
-													<div class="reviews-button button-border">Оставить отзыв</div>
+													<a href="#popup-review" class="reviews-button button-border">Оставить отзыв</a>
 													<div class="spollers__reviews-message message-reviews">
 														<div class="message-reviews__block">
 															<div class="message-reviews__title-block border-bottom">
@@ -3358,11 +3527,19 @@
 																<div class="message-reviews__data">28.04.2022</div>
 															</div>
 															<div class="message-reviews__block-star">
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
+																<div class="rating non-margin-bottom">
+																	<div class="rating__body rating-percentage-scale-size-body">
+																		<div class="rating__active rating-percentage-scale-size-active" style="
+																			width: 100%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
+																	</div>
+																</div>
 															</div>
 															<div class="message-reviews__text">Я ношу эти кроссовки уже больше 3х
 																месяцев, только сейчас решила написать
@@ -3384,11 +3561,19 @@
 																<div class="message-reviews__data">09.01.2022</div>
 															</div>
 															<div class="message-reviews__block-star">
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
-																<div class="yellow-star"></div>
+																<div class="rating non-margin-bottom">
+																	<div class="rating__body rating-percentage-scale-size-body">
+																		<div class="rating__active rating-percentage-scale-size-active" style="
+																			width: 100%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
+																	</div>
+																</div>
 															</div>
 															<div class="message-reviews__text">Кроссовки очень удобные и красивые. Ношу
 																не снимая. соотношение цены
@@ -3429,17 +3614,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 100%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -3469,17 +3653,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 100%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -3508,17 +3691,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 0%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -3544,17 +3726,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 100%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -3578,19 +3759,16 @@
 												<div class="swiper-slide swiper-like-slide">
 													<a href="#" class="product">
 														<div class="product__block-info">
-															<div class="product__rating">
-																<div class="rating">
+															<div class="rating">
+																<div class="rating__body rating-body-catalog-products ">
+																	<div class="rating__active rating-active-catalog-products" style="
+																		width: 100%;"></div>
 																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																		<input type="radio" class="rating__item" value="1" name="rating">
+																		<input type="radio" class="rating__item" value="2" name="rating">
+																		<input type="radio" class="rating__item" value="3" name="rating">
+																		<input type="radio" class="rating__item" value="4" name="rating">
+																		<input type="radio" class="rating__item" value="5" name="rating">
 																	</div>
 																</div>
 															</div>
@@ -3616,17 +3794,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 100%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -3682,17 +3859,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 100%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -3722,17 +3898,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 100%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -3761,17 +3936,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 100%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -3797,17 +3971,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 60%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -3833,17 +4006,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 40%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -3869,17 +4041,16 @@
 														<div class="product__block-info">
 															<div class="product__rating">
 																<div class="rating">
-																	<div class="rating__items">
-																		<input id="rating-card5" type="radio" class="rating__input" value="card5" name="rating">
-																		<label for="rating-card5" class="rating__label"></label>
-																		<input id="rating-card4" type="radio" class="rating__input" value="card4" name="rating">
-																		<label for="rating-card4" class="rating__label"></label>
-																		<input id="rating-card3" type="radio" class="rating__input" value="card3" name="rating">
-																		<label for="rating-card3" class="rating__label"></label>
-																		<input id="rating-card2" type="radio" class="rating__input" value="card2" name="rating">
-																		<label for="rating-card2" class="rating__label"></label>
-																		<input id="rating-card1" type="radio" class="rating__input" value="card1" name="rating">
-																		<label for="rating-card1" class="rating__label"></label>
+																	<div class="rating__body rating-body-catalog-products ">
+																		<div class="rating__active rating-active-catalog-products" style="
+																			width: 100%;"></div>
+																		<div class="rating__items">
+																			<input type="radio" class="rating__item" value="1" name="rating">
+																			<input type="radio" class="rating__item" value="2" name="rating">
+																			<input type="radio" class="rating__item" value="3" name="rating">
+																			<input type="radio" class="rating__item" value="4" name="rating">
+																			<input type="radio" class="rating__item" value="5" name="rating">
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -5331,7 +5502,48 @@
 
 
 
+			<div id="popup-review" class="popap-main">
+				<div class="wrapper-popap">
+					<div class="backgraund-popap"></div>
+					<a class="popap-area" href="#fix"></a>
+					<div class="popap">
+						<div class="popap__container">
 
+							<div class="popap__title">Заполните форму что бы оставить отзыв</div>
+
+							<div class="popap__content">
+								<div class="popap__block-rating">
+									<div class="popap__rating-text">Оценить</div>
+									<div class="popap__rating">
+										<div class="rating non-margin-bottom">
+											<div class="rating__body rating-body-popap">
+												<div class="rating__active rating-active-popap" style="width: 100%;"></div>
+												<div class="rating__items">
+													<input type="radio" class="rating__item" value="1" name="rating">
+													<input type="radio" class="rating__item" value="2" name="rating">
+													<input type="radio" class="rating__item" value="3" name="rating">
+													<input type="radio" class="rating__item" value="4" name="rating">
+													<input type="radio" class="rating__item" value="5" name="rating">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="popap-form">
+									<label class="label-placeholder label-placeholder-popap">
+										<input required class="input-placeholder" type="text">
+										<span placeholder='Имя'></span>
+									</label>
+									<textarea class="textarea-popap" placeholder='Ввведите текст' name="text"></textarea>
+								</div>
+							</div>
+							<div class="popap__button-block"><a href="#" class="popap-button">Оставить отзыв</a></div>
+							<a href="#fix" class="button-popap-delet"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
 
 		</main>
 		<footer class="footer">
@@ -5357,9 +5569,9 @@
 				</div>
 				<div class="footer__items">
 					<div class="footer__items-title">Клиентская поддержка</div>
-					<a href="#" class="footer-link">Оплата и доставка</a>
-					<a href="#" class="footer-link">Гарантии </a>
-					<a href="#" class="footer-link">Как сделать заказ</a>
+					<a href="Payment-and-delivery.html" class="footer-link">Оплата и доставка</a>
+					<a href="guarantees.html" class="footer-link">Гарантии </a>
+					<a href="info-order.html" class="footer-link">Как сделать заказ</a>
 					<a href="#" class="footer-link">Политика конфиденциальности</a>
 				</div>
 				<div class="footer__items">
@@ -5391,7 +5603,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220727155658"></script>
+	<script src="js/app.min.js?_v=20220730224504"></script>
 </body>
 
 </html>

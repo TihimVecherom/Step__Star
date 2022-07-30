@@ -5746,6 +5746,34 @@
                     },
                     on: {}
                 });
+                new core(".swiper-cabinet", {
+                    modules: [ Navigation ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 6,
+                    spaceBetween: 0,
+                    autoHeight: true,
+                    speed: 800,
+                    navigation: {
+                        prevEl: ".prev-slide-mobile",
+                        nextEl: ".next-slide-mobile"
+                    },
+                    breakpoints: {
+                        280: {
+                            slidesPerView: .9,
+                            spaceBetween: 0
+                        },
+                        428: {
+                            slidesPerView: 3,
+                            spaceBetween: 20
+                        },
+                        3e3: {
+                            slidesPerView: 1,
+                            spaceBetween: 20
+                        }
+                    },
+                    on: {}
+                });
             }
         }
         window.addEventListener("load", (function(e) {
@@ -5887,6 +5915,22 @@
         if (menuBurger) menuBurger.addEventListener("click", (function(e) {
             menuBurger.classList.toggle("_burger-active");
             if (menuBody) menuBody.classList.toggle("_active-menu-burger");
+        }));
+        const buttonBilling = document.querySelector(".button-billing-address");
+        const blockBillingRemove = document.querySelector(".billing-address");
+        const blockBillingAdd = document.querySelector(".delivery-adress");
+        if (buttonBilling) buttonBilling.addEventListener("click", (function(e) {
+            buttonBilling.classList.add("_display-non");
+            if (blockBillingRemove) blockBillingRemove.classList.remove("_display-non");
+            if (blockBillingAdd) blockBillingAdd.classList.add("_display-non");
+        }));
+        const buttonDelivery = document.querySelector(".button-address-delivery");
+        const blockDeliveryRemove = document.querySelector(".address-delivery ");
+        const blockDeliveryAdd = document.querySelector(".delivery-adress");
+        if (buttonDelivery) buttonDelivery.addEventListener("click", (function(e) {
+            buttonDelivery.classList.add("_display-non");
+            if (blockDeliveryRemove) blockDeliveryRemove.classList.remove("_display-non");
+            if (blockDeliveryAdd) blockDeliveryAdd.classList.add("_display-non");
         }));
         const mobileBodyButton = document.querySelector(".button-product-mobile");
         const mobileBodyBlock = document.querySelector(".catalog-mobile-opacity");

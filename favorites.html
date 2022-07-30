@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220727155658">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220730224504">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,7 @@
 <body>
 	<div class="wrapper">
 		<header class="header ">
+			<div id="fix" class="fix-popap"></div>
 			<div class="header__menu menu-burger non-pc">
 				<div class="menu__search non-pc">
 					<input class="input-search" type="text" placeholder="Поиск">
@@ -1193,12 +1194,12 @@
 					</div>
 					<div class="header-info__block-mobile">
 						<a class="header-top__item sales" href="#">Акции</a>
-						<a class="header-top__item shipping-payment" href="#">Доставка и оплата</a>
-						<a class="header-top__item guarantees" href="#">Гарантии</a>
-						<a class="header-top__item how-to-make-order" href="#">Как сделать заказ</a>
+						<a class="header-top__item shipping-payment" href="Payment-and-delivery.html">Доставка и оплата</a>
+						<a class="header-top__item guarantees" href="guarantees.html">Гарантии</a>
+						<a class="header-top__item " href="info-order.html">Как сделать заказ</a>
 					</div>
 
-					<a class="header-top__button" href="#">Войти / Регистрация</a>
+					<a class="header-top__button" href="#popup-enter">Войти / Регистрация</a>
 					<div class="header-info__block-questions">
 						<div class="question-mobile">Хотите заказать
 							кроссовки?</div>
@@ -1448,13 +1449,13 @@
 				<div class="header-top__container">
 
 					<div class="header-top__items">
-						<a class="header-top__item shipping-payment" href="#">Доставка и оплата</a>
-						<a class="header-top__item guarantees" href="#">Гарантии</a>
-						<a class="header-top__item how-to-make-order" href="#">Как сделать заказ</a>
+						<a class="header-top__item shipping-payment" href="Payment-and-delivery.html">Доставка и оплата</a>
+						<a class="header-top__item guarantees-link" href="guarantees.html">Гарантии</a>
+						<a class="header-top__item how-to-make-order-link" href="info-order.html">Как сделать заказ</a>
 					</div>
 					<div class="header-top__items">
-						<a class="header-top__item contacts" href="#">Контакты</a>
-						<a class="header-top__item login-registration" href="#">Войти / Регистрация</a>
+						<a class="header-top__item contacts" href="cabinet.html">Контакты</a>
+						<a class="header-top__item login-registration" href="#popup-enter">Войти/Регистрация</a>
 					</div>
 				</div>
 			</div>
@@ -1486,7 +1487,135 @@
 					</div>
 				</div>
 			</div>
+			<div id="popup-enter" class="popap-main">
+				<div class="wrapper-popap">
+					<div class="backgraund-popap"></div>
+					<a class="popap-area" href="#fix"></a>
+					<div class="popap">
+						<div class="popap__container">
 
+							<div class="popap__title">Вход</div>
+
+							<div class="popap__content">
+
+								<div class="popap-form">
+									<label class="label-placeholder label-placeholder-popap">
+										<input required class="input-placeholder" type="text">
+										<span placeholder='Имя пользователя или адрес электронной почты'></span>
+									</label>
+									<label class="label-placeholder label-placeholder-popap">
+										<input required class="input-placeholder" type="password">
+										<span placeholder='Пароль'></span>
+									</label>
+									<div class="input-label-block-popap">
+										<div class="popap-checkbox-block">
+											<input id='check-popap' type='checkbox' />
+											<label for='check-popap'>
+												<span></span>
+												Запомнить меня
+											</label>
+										</div>
+										<a href="#popup-password-remove" class="count-product-filter popap-link">Забыли пароль?</a>
+									</div>
+								</div>
+							</div>
+							<div class="popap__button-block"><a href="#" class="popap-button">Войти</a></div>
+							<a href="#fix" class="button-popap-delet"></a>
+							<a href="#popup-registration" class="popap-link-registration">Регистрация</a>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div id="popup-registration" class="popap-main">
+				<div class="wrapper-popap">
+					<div class="backgraund-popap"></div>
+					<a class="popap-area" href="#fix"></a>
+					<div class="popap">
+						<div class="popap__container">
+
+							<div class="popap__title">Регистрация</div>
+
+							<div class="popap__content">
+
+								<div class="popap-form">
+									<label class="label-placeholder label-placeholder-popap">
+										<input required class="input-placeholder" type="email">
+										<span placeholder='Ваш адрес электронной почты'></span>
+									</label>
+									<div class="popap-text-form">Пароль будет отправлен на ваш адрес электронной почты.</div>
+									<div class="input-label-block-popap">
+										<div class="popap-checkbox-block">
+											<input id='check-popap-1' type='checkbox' />
+											<label for='check-popap-1'>
+												<span></span>
+												Даю согласие на обработку персональных данных в соответствии
+												с
+											</label>
+										</div>
+										<a href="#" class="count-product-filter popap-link link-underline color-black">Положением
+											конфиденциальности</a>
+									</div>
+								</div>
+							</div>
+							<div class="popap__button-block"><a href="#" class="popap-button ">Регистрация</a></div>
+							<a href="#fix" class="button-popap-delet"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="popup-forgot-password" class="popap-main">
+				<div class="wrapper-popap">
+					<div class="backgraund-popap"></div>
+					<a class="popap-area" href="#fix"></a>
+					<div class="popap">
+						<div class="popap__container">
+
+							<div class="popap__title">Забыли пароль?</div>
+
+							<div class="popap__content">
+								<div class="popap-text-form text-popap-check">Письмо восстановления пароля отправлено.</div>
+								<div class="popap-text-form">Письмо со ссылкой для сброса пароля было направленно на адрес
+									электронной почты, привязанный к вашей учётной записи. Доставка
+									сообщения может занять несколько минут. Пожалуйста, подождите
+									не менее 10 минут, прежде чем инициировать ещё один запрос.</div>
+							</div>
+
+							<a href="#fix" class="button-popap-delet"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="popup-password-remove" class="popap-main">
+				<div class="wrapper-popap">
+					<div class="backgraund-popap"></div>
+					<a class="popap-area" href="#fix"></a>
+					<div class="popap">
+						<div class="popap__container">
+
+							<div class="popap__title">Запрос на сброс пароля</div>
+
+							<div class="popap__content">
+								<div class="popap-text-form ">Здравствуйте,andrey17ful.</div>
+								<div class="popap-text-form ">На Купить кроссовки был запрошен новый пароль для аккаунта </div>
+								<div class="popap-text-form ">Имя пользователя: andrey17ful</div>
+								<div class="popap-text-form ">Если вы не отправляли этот запрос , просто проигнорируйте это сообщение
+								</div>
+								<div class="popap-text-form ">Если хотите продолжить</div>
+								<a href="#popup-forgot-password" class="popap-text-form popap-link link-underline color-black ">Нажмите здесь что бы
+									сбросить свой пароль</a>
+								<div class="popap-text-form non-margin-bottom">Спасибо что ознакомились</div>
+							</div>
+
+							<a href="#fix" class="button-popap-delet"></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</header>
 		<main class="page">
 
@@ -1501,7 +1630,6 @@
 						<div class="genus__search non-mobile"></div>
 						<div data-tabs-body class="tabs__content">
 							<div class="tabs__body card-product-body-tabs">
-
 								<div class="header__menu non-mobile border-bottom ">
 									<div class="menu__search non-pc">
 										<input class="input-search" type="text" placeholder="Поиск">
@@ -2900,139 +3028,9 @@
 										</div>
 									</nav>
 								</div>
-
-								<div class="card-product__body ">
-
-									<div class="card-product__points-block">
-										<div class="card-product__point">Главная /</div>
-										<div class="card-product__point points-active">Избранное</div>
-									</div>
-									<div class="elect">
-										<div class="elect__title">
-
-										</div>
-										<div class="tabs__body tabs-body-basket">
-											<div class="tabs-body-basket__title-columns  columns-favorites-title">
-												<div class="basket-products__columns-title  ">
-													Товар
-												</div>
-												<div class="basket-products__columns-title  ">
-													Цена
-												</div>
-												<div class="basket-products__columns-title ">
-													Наличие
-												</div>
-												<div class="basket-products__columns-title  ">
-
-												</div>
-											</div>
-											<div class="basket-products">
-												<div class="basket-products__product ">
-
-													<div class="basket-products__content-columns columns-favorites">
-														<div class="basket-products__content-columns-block">
-															<div class="basket-products__columns-title non-pc border-bottom">
-																Товар
-															</div>
-															<div class="basket-products__item-picture-block">
-																<div class="basket-products__item-columns-picture-ibg_contain">
-																	<img src="img/main/basket/basket-product/1.jpg" alt="Product">
-																</div>
-																<div class="basket-products__item item-columns-description ">
-																	Кроссовки Nike Air <br>
-																	Force 1 Low <br>
-																	All White – Кожа – <br>
-																	EUR 38 <br>
-																</div>
-															</div>
-														</div>
-														<div class="basket-products__content-columns-block columns-block-favorites flex-block-space-between-mobile">
-															<div class="basket-products__columns-title non-pc ">
-																Цена</div>
-															<div class="basket-products__item item-columns-price item-columns-price-favorites">
-																5990,00
-																Руб.</div>
-														</div>
-														<div class="basket-products__content-columns-block flex-block-space-between-mobile columns-block-favorites">
-															<div class="basket-products__columns-title non-pc ">Наличие</div>
-															<div class="product-availability">В наличии</div>
-
-														</div>
-														<div class="basket-products__content-columns-block columns-block-favorites block-button-favorites">
-															<a class="favorites-button wiew-button" href="#">Просмотреть</a>
-
-														</div>
-														<div class="basket-products__content-columns-block columns-block-favorites block-button-favorites">
-															<a class="favorites-button add-to-cart-button" href="#">В корзину</a>
-
-														</div>
-
-
-														<button class="basket-products__delet"></button>
-													</div>
-
-												</div>
-
-											</div>
-											<div class="basket-products border-bottom">
-												<div class="basket-products__product ">
-
-													<div class="basket-products__content-columns columns-favorites">
-														<div class="basket-products__content-columns-block">
-															<div class="basket-products__columns-title non-pc border-bottom">
-																Товар
-															</div>
-															<div class="basket-products__item-picture-block">
-																<div class="basket-products__item-columns-picture-ibg_contain">
-																	<img src="img/main/basket/basket-product/2.jpg" alt="Product">
-																</div>
-																<div class="basket-products__item item-columns-description ">
-																	Кроссовки New <br>
-																	Balance 530<br>
-																	WhiteBlack - <br>
-																	Черные| Белые - <br>
-																	EUR 41<br>
-																</div>
-															</div>
-														</div>
-														<div class="basket-products__content-columns-block columns-block-favorites flex-block-space-between-mobile">
-															<div class="basket-products__columns-title non-pc ">
-																Цена</div>
-															<div class="basket-products__item item-columns-price item-columns-price-favorites">
-																990,00
-																Руб.</div>
-														</div>
-														<div class="basket-products__content-columns-block flex-block-space-between-mobile columns-block-favorites">
-															<div class="basket-products__columns-title non-pc ">Наличие</div>
-															<div class="product-availability">В наличии</div>
-
-														</div>
-														<div class="basket-products__content-columns-block columns-block-favorites block-button-favorites">
-															<a class="favorites-button wiew-button" href="#">Просмотреть</a>
-
-														</div>
-														<div class="basket-products__content-columns-block columns-block-favorites block-button-favorites">
-															<a class="favorites-button add-to-cart-button" href="#">В корзину</a>
-
-														</div>
-
-
-														<button class="basket-products__delet"></button>
-													</div>
-
-												</div>
-
-											</div>
-
-										</div>
-									</div>
-								</div>
-
-
-
 							</div>
 							<div class="tabs__body ">
-								<div class="header__menu non-mobile">
+								<div class="header__menu non-mobile border-bottom">
 									<div class="menu__search non-pc">
 										<input class="input-search" type="text" placeholder="Поиск">
 									</div>
@@ -4436,6 +4434,132 @@
 						</div>
 
 					</div>
+					<div class="card-product__body ">
+
+						<div class="card-product__points-block">
+							<a href="#" class="card-product__point">Главная /</a>
+							<a href="#" class="card-product__point points-active">Избранное</a>
+						</div>
+						<div class="elect">
+							<div class="elect__title">
+								Избранное
+							</div>
+							<div class="tabs__body tabs-body-basket">
+								<div class="tabs-body-basket__title-columns  columns-favorites-title">
+									<div class="basket-products__columns-title  ">
+										Товар
+									</div>
+									<div class="basket-products__columns-title  ">
+										Цена
+									</div>
+									<div class="basket-products__columns-title ">
+										Наличие
+									</div>
+									<div class="basket-products__columns-title  ">
+
+									</div>
+								</div>
+								<div class="basket-products">
+									<div class="basket-products__product ">
+
+										<div class="basket-products__content-columns columns-favorites">
+											<div class="basket-products__content-columns-block">
+												<div class="basket-products__columns-title non-pc border-bottom">
+													Товар
+												</div>
+												<div class="basket-products__item-picture-block">
+													<div class="basket-products__item-columns-picture-ibg_contain">
+														<img src="img/main/basket/basket-product/1.jpg" alt="Product">
+													</div>
+													<div class="basket-products__item item-columns-description ">
+														Кроссовки Nike Air <br>
+														Force 1 Low <br>
+														All White – Кожа – <br>
+														EUR 38 <br>
+													</div>
+												</div>
+											</div>
+											<div class="basket-products__content-columns-block columns-block-favorites flex-block-space-between-mobile">
+												<div class="basket-products__columns-title non-pc ">
+													Цена</div>
+												<div class="basket-products__item item-columns-price item-columns-price-favorites">
+													5990,00
+													Руб.</div>
+											</div>
+											<div class="basket-products__content-columns-block flex-block-space-between-mobile columns-block-favorites">
+												<div class="basket-products__columns-title non-pc ">Наличие</div>
+												<div class="product-availability">В наличии</div>
+
+											</div>
+											<div class="basket-products__content-columns-block columns-block-favorites block-button-favorites">
+												<a class="favorites-button wiew-button" href="#">Просмотреть</a>
+
+											</div>
+											<div class="basket-products__content-columns-block columns-block-favorites block-button-favorites">
+												<a class="favorites-button add-to-cart-button" href="#">В корзину</a>
+
+											</div>
+
+
+											<button class="basket-products__delet"></button>
+										</div>
+
+									</div>
+
+								</div>
+								<div class="basket-products border-bottom">
+									<div class="basket-products__product ">
+
+										<div class="basket-products__content-columns columns-favorites">
+											<div class="basket-products__content-columns-block">
+												<div class="basket-products__columns-title non-pc border-bottom">
+													Товар
+												</div>
+												<div class="basket-products__item-picture-block">
+													<div class="basket-products__item-columns-picture-ibg_contain">
+														<img src="img/main/basket/basket-product/2.jpg" alt="Product">
+													</div>
+													<div class="basket-products__item item-columns-description ">
+														Кроссовки New <br>
+														Balance 530<br>
+														WhiteBlack - <br>
+														Черные| Белые - <br>
+														EUR 41<br>
+													</div>
+												</div>
+											</div>
+											<div class="basket-products__content-columns-block columns-block-favorites flex-block-space-between-mobile">
+												<div class="basket-products__columns-title non-pc ">
+													Цена</div>
+												<div class="basket-products__item item-columns-price item-columns-price-favorites">
+													990,00
+													Руб.</div>
+											</div>
+											<div class="basket-products__content-columns-block flex-block-space-between-mobile columns-block-favorites">
+												<div class="basket-products__columns-title non-pc ">Наличие</div>
+												<div class="product-availability">В наличии</div>
+
+											</div>
+											<div class="basket-products__content-columns-block columns-block-favorites block-button-favorites">
+												<a class="favorites-button wiew-button" href="#">Просмотреть</a>
+
+											</div>
+											<div class="basket-products__content-columns-block columns-block-favorites block-button-favorites">
+												<a class="favorites-button add-to-cart-button" href="#">В корзину</a>
+
+											</div>
+
+
+											<button class="basket-products__delet"></button>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
 				</div>
 
 			</div>
@@ -4470,9 +4594,9 @@
 				</div>
 				<div class="footer__items">
 					<div class="footer__items-title">Клиентская поддержка</div>
-					<a href="#" class="footer-link">Оплата и доставка</a>
-					<a href="#" class="footer-link">Гарантии </a>
-					<a href="#" class="footer-link">Как сделать заказ</a>
+					<a href="Payment-and-delivery.html" class="footer-link">Оплата и доставка</a>
+					<a href="guarantees.html" class="footer-link">Гарантии </a>
+					<a href="info-order.html" class="footer-link">Как сделать заказ</a>
 					<a href="#" class="footer-link">Политика конфиденциальности</a>
 				</div>
 				<div class="footer__items">
@@ -4504,7 +4628,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220727155658"></script>
+	<script src="js/app.min.js?_v=20220730224504"></script>
 </body>
 
 </html>
