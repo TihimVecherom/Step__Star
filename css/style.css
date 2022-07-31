@@ -6688,6 +6688,7 @@ a:hover {
 }
 
 .banner-cabinet__container {
+  padding: 40px 40px 67px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6695,30 +6696,6 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-}
-
-@supports (padding: clamp( 1.5625rem , 1.3461538462rem  +  0.9615384615vw , 2.5rem )) {
-  .banner-cabinet__container {
-    padding: clamp( 1.5625rem , 1.3461538462rem  +  0.9615384615vw , 2.5rem );
-  }
-}
-
-@supports not (padding: clamp( 1.5625rem , 1.3461538462rem  +  0.9615384615vw , 2.5rem )) {
-  .banner-cabinet__container {
-    padding: calc(1.5625rem + 0.9375 * (100vw - 22.5rem) / 97.5);
-  }
-}
-
-@supports ( padding-bottom: clamp( 4.1875rem , 4.1875rem  +  0vw , 4.1875rem )) {
-  .banner-cabinet__container {
-    padding-bottom: clamp( 4.1875rem , 4.1875rem  +  0vw , 4.1875rem );
-  }
-}
-
-@supports not ( padding-bottom: clamp( 4.1875rem , 4.1875rem  +  0vw , 4.1875rem )) {
-  .banner-cabinet__container {
-    padding-bottom: calc(4.1875rem + 0 * (100vw - 22.5rem) / 97.5);
-  }
 }
 
 .non-border {
@@ -7125,6 +7102,149 @@ a:hover {
 
 ._display-non {
   display: none;
+}
+
+.how-to-make-order__item-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+  /* identical to box height, or 42px */
+  color: #000000;
+}
+
+@supports (font-size: clamp( 1.125rem , 0.9519230769rem  +  0.7692307692vw , 1.875rem )) {
+  .how-to-make-order__item-title {
+    font-size: clamp( 1.125rem , 0.9519230769rem  +  0.7692307692vw , 1.875rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.9519230769rem  +  0.7692307692vw , 1.875rem )) {
+  .how-to-make-order__item-title {
+    font-size: calc(1.125rem + 0.75 * (100vw - 22.5rem) / 97.5);
+  }
+}
+
+.content-map {
+  margin-bottom: 40px;
+}
+
+.content-map__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content-map__item {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* identical to box height, or 22px */
+  /* Text_black */
+  color: #202020;
+  padding-left: 30px;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.8461538462rem  +  0.1282051282vw , 1rem )) {
+  .content-map__item {
+    font-size: clamp( 0.875rem , 0.8461538462rem  +  0.1282051282vw , 1rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.8461538462rem  +  0.1282051282vw , 1rem )) {
+  .content-map__item {
+    font-size: calc(0.875rem + 0.125 * (100vw - 22.5rem) / 97.5);
+  }
+}
+
+.item-map-check {
+  background: url("../img/main/contacts/check.svg") left center no-repeat;
+}
+
+.item-map-time {
+  background: url("../img/main/contacts/time.svg") left center no-repeat;
+}
+
+.item-map-phone {
+  background: url("../img/main/contacts/phone.svg") left center no-repeat;
+}
+
+.item-map-whatsaap {
+  background: url("../img/main/contacts/whatsaap.svg") left center no-repeat;
+}
+
+.item-map-mail {
+  background: url("../img/main/contacts/mail.svg") left center no-repeat;
+}
+
+.contacts__map {
+  position: relative;
+  width: 100%;
+}
+
+@supports (height: clamp( 15rem , 10.6730769231rem  +  19.2307692308vw , 33.75rem )) {
+  .contacts__map {
+    height: clamp( 15rem , 10.6730769231rem  +  19.2307692308vw , 33.75rem );
+  }
+}
+
+@supports not (height: clamp( 15rem , 10.6730769231rem  +  19.2307692308vw , 33.75rem )) {
+  .contacts__map {
+    height: calc(15rem + 18.75 * (100vw - 22.5rem) / 97.5);
+  }
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contacts__button-logo {
+  margin-top: 20px;
+  display: block;
+  width: 71px;
+  height: 71px;
+  border-radius: 50%;
+  background: #2DB742 url("../img/main/contacts/whatsapp-white.svg") center center no-repeat;
+  -webkit-filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.18));
+          filter: drop-shadow(0px 4px 7px rgba(0, 0, 0, 0.18));
+  margin-left: auto;
+  position: relative;
+  z-index: 3;
+}
+
+.cantacts__message {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-105%, -50%);
+      -ms-transform: translate(-105%, -50%);
+          transform: translate(-105%, -50%);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+  padding: 9px 16px;
+  background: #F5F5F5;
+  -webkit-box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.18);
+          box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+  min-width: 194px;
 }
 
 .icon-menu {
@@ -9918,17 +10038,9 @@ button.swiper-pagination-bullet {
     display: none;
   }
 
-@supports ( padding-bottom: clamp( 5.625rem , 5.625rem  +  0vw , 5.625rem )) {
-    .banner-cabinet__container {
-      padding-bottom: clamp( 5.625rem , 5.625rem  +  0vw , 5.625rem );
-    }
-}
-
-@supports not ( padding-bottom: clamp( 5.625rem , 5.625rem  +  0vw , 5.625rem )) {
-    .banner-cabinet__container {
-      padding-bottom: calc(5.625rem + 0 * (100vw - 22.5rem) / 97.5);
-    }
-}
+  .banner-cabinet__container {
+    padding: 25px 25px 90px 25px;
+  }
 
   .tabs-cabinet {
     margin-top: 0px;
@@ -9987,6 +10099,21 @@ button.swiper-pagination-bullet {
 
   .address-delivery__block-form {
     min-width: 100%;
+  }
+
+  .contacts__button-block {
+    position: fixed;
+    z-index: 2;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .contacts__button-logo {
+    overflow: hidden;
+  }
+
+  .cantacts__message {
+    opacity: 0;
   }
 
   .icon-menu {
